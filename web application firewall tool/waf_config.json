@@ -1,0 +1,26 @@
+{
+    "port": 8085,
+    "blocked_countries": [
+        "US"
+    ],
+    "sql_injection_patterns": [
+        "(\\%27)|(\\')|(\\-\\-)|(\\%23)|(#)",
+        "((\\%3D)|(=))[^\\n]*((\\%27)|(\\')|(\\-\\-)|(\\%3B)|(;))",
+        "\\w*((\\%27)|(\\'))(\\%6F|o|O)(\\%72|r|R)",
+        "((\\%27)|(\\'))union",
+        "exec(\\s|\\+)+(s|x)p\\w+"
+    ],
+    "xss_patterns": [
+        "(<|%3C)(script|img|iframe|a|div|span)(.*?)(>|%3E)",
+        "(javascript:|data:|vbscript:|livescript:)"
+    ],
+    "command_injection_patterns": [
+        ".*;.*",
+        ".*&&.*",
+        ".*\\|\\|.*",
+        ".*\\|.*",
+        ".*`.*",
+        ".*\\$\\(.*"
+    ],
+    "rate_limit": 95
+}

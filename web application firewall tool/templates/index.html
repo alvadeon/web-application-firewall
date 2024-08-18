@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+      body {
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .welcome-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 2rem 3rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        text-align: center;
+        transition: transform 0.2s;
+      }
+      .welcome-container:hover {
+        transform: scale(1.05);
+      }
+      h1 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+      }
+      p {
+        color: #34495e;
+        font-size: 1.2rem;
+      }
+      button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background-color 0.2s;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="welcome-container">
+      <h1>Welcome to the Test Web Application!</h1>
+      <p>
+        We are glad to have you here. Enjoy exploring the features of our TEST
+        application.
+      </p>
+      <button onclick="location.href='/login'">Get Started</button>
+    </div>
+  </body>
+</html>
