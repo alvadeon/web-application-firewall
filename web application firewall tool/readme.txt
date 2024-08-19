@@ -14,7 +14,7 @@ add the necessory modules and library
 
 
 THERE WILL BE AN TARGETTED WEBSITE WHICH IS CREATED DUMMY FOR TEST THE MAIN TOOL AND THE TARGETED WEBSITE APP.py SHOULD BE RUN FIRST 
-AND AFTER IT waf_ui.py should be used 
+AND RIGHT AFTER  waf_ui.py should need to be run.
 
 for running the application 
 1. python app.py
